@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+
+   .p-steps .p-steps-item.p-highlight .p-steps-number {
+    background: #008000;
+    color: #ffffff;
+}  
+
+ /* .p-state-complete .p-steps-number{
+    background-color: green !important;
+}   */
+
+/* .p-steps-number{
+    background: #008000;
+    color: #ffffff;
+}  */

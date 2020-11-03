@@ -1,0 +1,33 @@
+<div class="stepsdemo-content">
+    <p-card>
+        <ng-template pTemplate="title">
+            Address Information
+        </ng-template>
+        <ng-template pTemplate="subtitle">
+            Choose your Address
+        </ng-template>
+        <ng-template pTemplate="content">
+            <div class="p-fluid p-formgrid p-grid">
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="class">Address Type</label>
+                    <p-dropdown inputId="class" [(ngModel)]="seatInformation.class" [options]="classes"  optionLabel="name" placeholder="Select a Address type"></p-dropdown>
+                </div>
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="class">State</label>
+                    <p-dropdown inputId="class" [(ngModel)]="seatInformation.state" [options]="states"  optionLabel="name" placeholder="Select State"></p-dropdown>
+                </div>
+     
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="class">County</label>
+                    <p-dropdown inputId="class" [(ngModel)]="seatInformation.county" [options]="countyes"  optionLabel="name" placeholder="Select County"></p-dropdown>
+                </div> 
+            </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div class="p-grid p-nogutter p-justify-between">
+                <p-button label="Back" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+                <p-button label="Next" class='ml-2' (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+            </div>
+        </ng-template>
+    </p-card>
+</div>
